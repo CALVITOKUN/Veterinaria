@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/BASIC.CSS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="../IMG/icons/Web/icons8-contactos-ios-16-filled-16.png">
+    <title>Medicamentos y Medicinas</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .medicamento {
+            margin-bottom: 20px;
+            margin-left: 20px;
+            
+        }
+
+        .medicamento img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+       
+        
+
+      
+
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+				<li><a href="Consultas.html">Consultas</a></li>
+				<li><a href="Historial.html">Historial</a></li>
+               <!-- <button onclick="toggleDarkMode()">Cambiar Modo</button>-->
+               
+            </ul>
+        </nav>
+        
+        
+    </header>
+    
+    <h1>Catálogo de Medicamentos y Medicinas</h1>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #search-input {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    
+
+    <input type="text" id="search-input" placeholder="Buscar por letra">
+
+    <div class="medicamento" data-nombre="Depakine" data-precio="89.99"><h2>Depakine 500</h2>
+        <p>
+            No debe utilizar Depakine si está embarazada, a menos que no funcione ningún otro tratamiento.
+            Si es mujer con capacidad de gestación, no debe tomar Depakine, a menos que use un método eficaz para el control de la natalidad (anticoncepción) durante todo el tratamiento con Depakine. No deje de tomar Depakine o su anticonceptivo, hasta que haya hablado esto con su médico. Su médico le aconsejará.
+        </p>
+        <p>Precio: 89.99 €</p></div>
+    <div class="medicamento" data-nombre="Depakine" data-precio="60"><h2>Depakine 500 crono</h2>
+        <p>
+            No debe utilizar Depakine si está embarazada, a menos que no funcione ningún otro tratamiento.
+            Si es mujer con capacidad de gestación, no debe tomar Depakine, a menos que use un método eficaz para el control de la natalidad (anticoncepción) durante todo el tratamiento con Depakine. No deje de tomar Depakine o su anticonceptivo, hasta que haya hablado esto con su médico. Su médico le aconsejará.
+        </p>
+        <p>Precio: 60 €</p></div>
+    <div class="medicamento" data-nombre="Acetato" data-precio="50"><h2>Acetato de melengestrol</h2>
+        <p>El acetato de melengestrol, vendido bajo las marcas Heifermax y MGA entre otras, es un medicamento de progestágeno que se utiliza en la reproducción animal.</p>
+        <p>Precio: 50 €</p></div>
+    <div class="medicamento" data-nombre="Amoxicillina" data-precio="25.99"><h2>Amoxicillina</h2>
+        <p>Este medicamento no es adecuado para todas las personas. No lo use si ha tenido una reacción alérgica a la amoxicilina, a algún tipo de penicilina o antibióticos de cefalosporina.</p>
+        <p>Precio: 25.99 €</p></div>
+    <div class="medicamento" data-nombre="Albendazol" data-precio="60"><h2>Albendazol</h2>
+        <p>El ocasiones, el albendazol también se usa para tratar infecciones provocadas por ascariasis, teniasis, nematodiasis, trichuriasis, oxiuriasis, duelas y otros parásitos (una planta o un animal que viven dentro de otro organismo vivo para recibir algunos beneficios). Hable con su médico acerca de los riesgos de usar este medicamento para tratar su afección</p>
+        <p>Precio: 60 €</p></div>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const medicamentos = document.querySelectorAll('.medicamento');
+
+        searchInput.addEventListener('input', function () {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            medicamentos.forEach(medicamento => {
+                const nombre = medicamento.getAttribute('data-nombre').toLowerCase();
+
+                if (nombre.includes(searchTerm)) {
+                    medicamento.style.display = 'block';
+                } else {
+                    medicamento.style.display = 'none';
+                }
+            });
+        });
+    </script>
+   
+</body>
+
+</html>

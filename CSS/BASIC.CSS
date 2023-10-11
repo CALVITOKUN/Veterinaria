@@ -1,0 +1,141 @@
+/* Estilos para la página completa */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+}
+
+/* Estilos para la cabecera */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+/* Estilos para la navegación */
+nav {
+	background-color: #666;
+	color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ccc;
+}
+
+/* Estilos para el contenido principal */
+main {
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+/* Estilos para el pie de página */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	width: 100vw;
+	position: absolute;
+	bottom: 0%;
+}
+/*Derechos reservados*/
+span , #derechos {
+    color: rgb(61, 61, 212);
+}
+/*Centros de Estudios*/
+a.estudios {
+    text-decoration: none;
+}
+/*CONTACTOS*/
+a.TLF , a.E-MAIL , a.LINKEDIN , a.CURRICULUM {
+	text-decoration: none;
+}
+#correocon{
+	list-style-image: url('../IMG/icons/Web/icons8-componer-correo-windows-11-color-16.png');
+}
+#tlfcon{
+	list-style-image: url('../IMG/icons/Web/icons8-dos-smartphones-windows-11-color-16.png');
+}
+#linkcon{
+	list-style-image: url('../IMG/icons/Web/icons8-linkedin-color-16.png');
+}
+#proceso{
+	color: red;
+}
+#cert-deloitte{
+	list-style-image: url('../IMG/icons/Web/DELOITTE\ \(2\).ico');
+}
+#CURRICULUM{
+	list-style-image: url('../IMG/icons/Web/icons8-plan-de-estudios-kiranshastry-lineal-color-16.png');
+}
+/*foto perfil*/
+#foto{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-left: 1.5%;
+}
+/*modo oscuro y claro*/
+/*
+.light-mode {
+	background-color: #ffffff;
+	color: #000000;
+  }
+  
+  .dark-mode {
+	background-color: #222222;
+	color: #ffffff;
+  }
+  */
+
+  
+  #calendar { font-family:Arial;font-size:12px;}
+  #calendar caption {text-align:left;padding:5px 10px; background-color:#003366;
+  color:#fff;font-weight:bold;font-size:medium;}
+  #calendar caption div:nth-child(1) {float:left;}
+  #calendar caption div:nth-child(2) {float:right;}
+  #calendar caption div:nth-child(2) a {cursor:pointer;}
+  #calendar th {background-color:#006699;color:#fff;width:40px;}
+  #calendar td {text-align:right;padding:2px 5px;background-color:silver;}
+  #calendar .hoy {background-color:red;}
+
+  .Lista{
+	margin-top: 100px;
+	font-size: 20px;
+  }
+  .Lista > li {
+	list-style: none;
+  }
+  .Lista > li > a {
+	text-decoration: none;
+	
+	padding-left: 35%;
+	
+	
+	
+  }
+  
+  .medicamento > h2 {
+	color: #304550;
+  }
